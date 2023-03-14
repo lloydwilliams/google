@@ -1,0 +1,41 @@
+gcloud auth login
+
+
+Google Samples
+https://cloud.google.com/run/docs/quickstarts
+https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-java-service
+https://cloud.google.com/run/docs/quickstarts/deploy-container
+
+
+You are now logged in as [lloyd.williams@datadoghq.com].
+Your current project is [datadog-sandbox].  You can change this setting by running:
+  $ gcloud config set project PROJECT_ID
+
+Montréal
+(northamerica-northeast1)
+Toronto
+(northamerica-northeast2)
+
+
+DATADOG
+
+https://docs.datadoghq.com/serverless/google_cloud_run/?code-lang=java
+
+Datadog - One Click Deploy -- https://github.com/DataDog/crpb/tree/main
+
+https://docs.datadoghq.com/serverless/google_cloud_run/?code-lang=java
+
+
+gcloud run deploy APP_NAME --image=gcr.io/YOUR_PROJECT/APP_NAME \
+  --port=80 \
+  --update-env-vars=DD_API_KEY=$DD_API_KEY \
+  --update-env-vars=DD_TRACE_ENABLED=true \
+  --update-env-vars=DD_SITE='datadoghq.com' \
+  --allow-unauthenticated
+
+https://github.com/DataDog/crpb/blob/main/java/Dockerfile
+
+---
+Build Packs
+
+https://buildpacks.io/docs/tools/pack/
